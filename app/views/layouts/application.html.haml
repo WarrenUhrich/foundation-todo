@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title FoundationTodo
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = render 'layouts/nav'
+    .main.row
+      .small-12.columns= yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    :plain
+      <script>
+        $(document).foundation();
+      </script>

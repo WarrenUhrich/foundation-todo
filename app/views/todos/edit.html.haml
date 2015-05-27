@@ -1,0 +1,5 @@
+%h1 Edit Item
+.panel
+  = form_for(@todo) do |f|
+    %p= f.text_field :item
+    = f.submit 'Update Item', :class => 'button tiny'

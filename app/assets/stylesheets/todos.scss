@@ -1,0 +1,11 @@
+.main {
+  ul {
+    list-style: none;
+    margin-left: 0;
+
+    li.panel {
+      background: #f7f1c0;
+    }
+  }
+  .panel { padding-bottom: 0; }
+}

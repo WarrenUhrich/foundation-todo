@@ -1,0 +1,8 @@
+%h1 Todo List
+- @todos.each do |todo|
+  %ul
+    %li.panel
+      %p= todo.item
+      .row
+        .small-6.columns= link_to "Edit", edit_todo_path(todo), :class => 'button tiny'
+        .small-6.columns.text-right= link_to "Delete", todo_path(todo), :method => :delete, :class => 'button alert tiny'
